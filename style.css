@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+html {
+  height: auto;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 2rem;
+  height: 150vh;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.top {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+  /* border: 2px black solid; */
+  margin-bottom: 1rem;
+}
+
+.top > div {
+  height: 100%;
+  /* border: 2px black solid; */
+  width: 49%;
+}
+
+.top1 {
+  font-size: xx-large;
+}
+
+.top2 {
+  font-size: x-large;
+}
+
+/* main */
+
+.main {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  /* border: 2px black solid; */
+}
+
+.main > div {
+  width: 25%;
+  height: 100%;
+  /* border: 1px black solid; */
+}
+
+.main2 {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+  /* border: 2px black solid; */
+}
+
+.main2 > div {
+  width: 25%;
+  height: 100%;
+  /* border: 1px black solid; */
+}
+
+.one {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one1 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40%;
+  width: 100%;
+  /* border: solid 1px black; */
+}
+
+.one11 {
+  width: 78%;
+  height: 78%;
+  /* border: solid 1px black; */
+}
+
+.one12 {
+  width: 20%;
+  height: 75%;
+  /* border: solid 1px black; */
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: large !important;
+}
+
+.one13 {
+  font-size: x-large !important;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+  height: 20%;
+  /* border: solid 1px black; */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.extend {
+  margin-top: 10rem;
+}
+
+footer {
+  margin-top: 4rem;
+  text-align: center;
+  opacity: 0.4;
+}
+
+/* media queries */
+@media (min-width: 900px) {
+  .main2 {
+    display: none;
+  }
+}
+@media (max-width: 1300px) {
+  .main {
+    margin-top: 5rem;
+  }
+
+  body {
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 150vw;
+  }
+  .top {
+    font-size: small;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    margin-top: 22rem;
+    margin-bottom: 2rem;
+  }
+  .main {
+    margin-top: 5rem;
+  }
+  .main {
+    display: none;
+  }
+
+  .main2 {
+    display: show;
+  }
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .top {
+    font-size: small;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .top {
+    font-size: small;
+    overflow: hidden;
+  }
+
+  .main {
+    justify-content: space-around;
+  }
+}
